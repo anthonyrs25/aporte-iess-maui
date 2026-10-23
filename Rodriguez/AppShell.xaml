@@ -3,12 +3,13 @@
     x:Class="Rodriguez.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Rodriguez"
+    xmlns:views="clr-namespace:Rodriguez.Views"
+    Shell.FlyoutBehavior="Disabled"
     Title="Rodriguez">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Aporte IESS"
+        ContentTemplate="{DataTemplate views:VistaInicio}"
+        Route="VistaInicio" />
 
 </Shell>

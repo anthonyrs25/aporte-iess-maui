@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Rodriguez.ViewModels"
+             x:Class="Rodriguez.Views.VistaInicio"
+             x:DataType="vm:VistaInicioViewModel"
+             Title="Aporte IESS">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+
+            <Label Text="Cálculo del aporte al IESS"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Entry Placeholder="Nombre"
+                   Text="{Binding Nombre}" />
+
+            <Entry Placeholder="Apellido"
+                   Text="{Binding Apellido}" />
+
+            <Entry Placeholder="Edad"
+                   Keyboard="Numeric"
+                   Text="{Binding Edad}" />
+
+            <Entry Placeholder="Salario"
+                   Keyboard="Numeric"
+                   Text="{Binding Salario}" />
+
+            <Button Text="Calcular aporte"
+                    Command="{Binding CalcularCommand}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
